@@ -1,0 +1,20 @@
+1.Error: failed to call git rev-parse --git-dir: exit status 128 : fatal: 不是 git 仓库（或者任何父目录）：.git
+（当您在不是Git仓库的目录中尝试使用Git或Git LFS命令时，就会遇到这种错误。）
+确保您在正确的Git仓库目录中：
+（1）首先，请确保您已经进入了包含.git目录的Git仓库目录。您可以使用ls -la或dir（取决于您的操作系统）来检查当前目录是否包含.git目录。
+初始化Git仓库（如果需要）：
+（2）如果您在一个新目录中，并且想要将其转换为Git仓库，您可以使用以下命令初始化一个新的Git仓库：
+git init
+（3）再次执行Git LFS命令：
+一旦您确认您在正确的Git仓库目录中，您可以再次尝试执行Git LFS命令。
+
+还有从远端仓库拉取代码的时候  记得关掉小黄猫
+
+
+
+2.
+（1）zip文件解压缩
+
+解压整个ZIP文件到当前目录:unzip filename.zip
+
+（2）解压整个ZIP文件到指定目录:unzip filename.zip -d /path/to/directory
